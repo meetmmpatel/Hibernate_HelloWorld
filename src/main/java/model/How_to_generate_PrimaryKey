@@ -1,0 +1,25 @@
+
+
+1. GenerationType.IDENTITY
+
+   - Easy to implements but not best for performance..
+   - It relies on an auto-incremented database column and lets the database
+       generate a new value with each insert operation. From a database point of view,
+       this is very efficient because the auto-increment columns are highly optimized,
+       and it doesn’t require any additional statements.
+
+2. GenerationType.AUTO
+
+    - When you don't provide any specific method, it will automatic use auto.
+    - This will follow Id generation base on your database provider
+
+3. GenerationType.SEQUENCE
+
+    - It requires additional select statements to get the next value from a database sequence.
+    But this has no performance impact on most applications.
+    And if your application has to persist a huge number of new entities,
+    you can use some Hibernate specific optimizations to reduce the number of statements.
+
+4. GenerationType.TABLE
+
+   - No longer recommended to use.

@@ -1,0 +1,14 @@
+Hibernate 5 - Read an Entity
+In Hibernate, an entity can be obtained from a database
+using the following Session methods –
+
+Session.get() → This method returns a persistence object of the given
+class with the given identifier. It will return null if there is no persistence object.
+
+Session.load() → This method returns a persistence object of the
+given class with the given identifier. It will throw an exception
+ObjectNotFoundException if an entity does not exist in the database.
+The load() method may return a proxy object instead of a real persistence object.
+
+Session.byId() → This method is used to obtain a persistence
+object by it a primary identifier.
