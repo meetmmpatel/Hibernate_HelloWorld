@@ -141,5 +141,4 @@ fabric.properties
 .idea/misc.xml
 .idea/vcs.xml
 Hibernate_HelloWorld.iml
-pom.xml
-src/
+

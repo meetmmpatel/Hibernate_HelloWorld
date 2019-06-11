@@ -38,10 +38,8 @@ public class App {
 	removeDao.deleteStudent(2);
 
 
-	readDao.loadStudent(2);
+//	readDao.loadStudent(2);
 
-	EmployeeDao employeeDao = new EmployeeDao();
-	employeeDao.readWriteEmployee();
 	
 	
   }
